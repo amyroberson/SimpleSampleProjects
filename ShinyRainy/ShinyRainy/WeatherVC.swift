@@ -43,16 +43,18 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        locationAuthStatus()
+        //locationAuthStatus()
     }
     
-    func locationAuthStatus() {
+    /*func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse
         {
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.Longitude = currentLocation.coordinate.longitude
+            
             //print(Location.sharedInstance.latitude,Location.sharedInstance.Longitude)
+            
             currentWeather.downloadWeatherDetails {
                 self.downloadForecastData {
                     self.updateMainUI()
@@ -83,14 +85,15 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             }
             completed()
         }
-    }
+    }*/
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return forecasts.count   }
+        return forecasts.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
