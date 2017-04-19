@@ -40,6 +40,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
+        currentWeather.downloadWeatherDetails {
+            self.updateMainUI()
+        }
+        self.downloadForecastData {
+            self.updateMainUI()
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -66,7 +72,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
         }
-    }
+    }*/
     func downloadForecastData(completed: @escaping DownloadComplete) {
         
         Alamofire.request(FORECAST_URL).responseJSON { response in
@@ -85,7 +91,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             }
             completed()
         }
-    }*/
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
