@@ -14,6 +14,6 @@ class Location {
     private init() {}
     
     var latitude: Double!
-    var Longitude: Double!
+    var longitude: Double!
     
 }

@@ -35,31 +35,23 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
         
-        
         tableView.delegate = self
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
-        currentWeather.downloadWeatherDetails {
-            self.updateMainUI()
-        }
-        self.downloadForecastData {
-            self.updateMainUI()
-        }
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //locationAuthStatus()
+        locationAuthStatus()
     }
     
-    /*func locationAuthStatus() {
+    func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse
         {
             currentLocation = locationManager.location
-            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
-            Location.sharedInstance.Longitude = currentLocation.coordinate.longitude
             
-            //print(Location.sharedInstance.latitude,Location.sharedInstance.Longitude)
+            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
             
             currentWeather.downloadWeatherDetails {
                 self.downloadForecastData {
@@ -72,7 +64,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
         }
-    }*/
+    }
     func downloadForecastData(completed: @escaping DownloadComplete) {
         
         Alamofire.request(FORECAST_URL).responseJSON { response in
