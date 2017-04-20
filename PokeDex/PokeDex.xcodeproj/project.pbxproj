@@ -19,6 +19,7 @@
 		E12E3AEE1EA8080D001D656F /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E12E3AED1EA8080D001D656F /* PokemonSolid.ttf */; };
 		E12E3AF01EA809C1001D656F /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = E12E3AEF1EA809C1001D656F /* music.png */; };
 		E12E3AF21EA809CB001D656F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E12E3AF11EA809CB001D656F /* music.mp3 */; };
+		E12E3AF41EA8F3C1001D656F /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E3AF31EA8F3C1001D656F /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E12E3AED1EA8080D001D656F /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		E12E3AEF1EA809C1001D656F /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		E12E3AF11EA809CB001D656F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		E12E3AF31EA8F3C1001D656F /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E12E3ACC1EA7E7D1001D656F /* ViewController.swift */,
+				E12E3AF31EA8F3C1001D656F /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				E12E3ACD1EA7E7D1001D656F /* ViewController.swift in Sources */,
 				E12E3ACB1EA7E7D0001D656F /* AppDelegate.swift in Sources */,
 				E12E3AE31EA7EFF4001D656F /* PokeCellCollectionViewCell.swift in Sources */,
+				E12E3AF41EA8F3C1001D656F /* PokemonDetailVC.swift in Sources */,
 				E12E3AE01EA7EB02001D656F /* Pokemon.swift in Sources */,
 				E12E3AE51EA80050001D656F /* csv.swift in Sources */,
 			);
