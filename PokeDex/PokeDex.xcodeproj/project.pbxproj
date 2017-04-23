@@ -21,6 +21,7 @@
 		E12E3AF01EA809C1001D656F /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = E12E3AEF1EA809C1001D656F /* music.png */; };
 		E12E3AF21EA809CB001D656F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E12E3AF11EA809CB001D656F /* music.mp3 */; };
 		E12E3AF41EA8F3C1001D656F /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E3AF31EA8F3C1001D656F /* PokemonDetailVC.swift */; };
+		E19496E11EACF836003F19C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19496E01EACF836003F19C8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E12E3AEF1EA809C1001D656F /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		E12E3AF11EA809CB001D656F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		E12E3AF31EA8F3C1001D656F /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
+		E19496E01EACF836003F19C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F566CB98952AA5A52C9CD2A2 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E12E3AE41EA80050001D656F /* csv.swift */,
+				E19496E01EACF836003F19C8 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				E12E3ACB1EA7E7D0001D656F /* AppDelegate.swift in Sources */,
 				E12E3AE31EA7EFF4001D656F /* PokeCellCollectionViewCell.swift in Sources */,
 				E12E3AF41EA8F3C1001D656F /* PokemonDetailVC.swift in Sources */,
+				E19496E11EACF836003F19C8 /* Constants.swift in Sources */,
 				E12E3AE01EA7EB02001D656F /* Pokemon.swift in Sources */,
 				E12E3AE51EA80050001D656F /* csv.swift in Sources */,
 			);
